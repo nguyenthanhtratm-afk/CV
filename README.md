@@ -52,3 +52,4 @@ Sửa file `src/content/vi.ts` và `src/content/en.ts`. Xem [CONTENT.md](./CONTE
 ## Deploy
 
 Push lên GitHub rồi import vào [Vercel](https://vercel.com). Không cần config thêm.
+# CV
