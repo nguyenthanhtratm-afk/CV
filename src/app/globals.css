@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-sky-bg: #E6F2FB;
+  --color-sky-bg-soft: #F2F8FD;
+  --color-cream: #F5F0E6;
+  --color-navy: #102447;
+  --color-navy-soft: #1A3160;
+  --color-brand: #2E6CF6;
+  --color-brand-hover: #1F58DC;
+  --color-brand-soft: #D6E4FE;
+  --color-ink: #0B1F3A;
+  --color-ink-soft: #4B5C7C;
+  --color-line: #DCE6F0;
+  --color-coral: #FF6B6B;
+
+  --radius-card: 1.5rem;
+  --radius-pill: 9999px;
+}
+
+:root {
+  --background: var(--color-sky-bg);
+  --foreground: var(--color-ink);
+  --muted: var(--color-ink-soft);
+  --surface: #FFFFFF;
+  --surface-alt: var(--color-cream);
+  --surface-dark: var(--color-navy);
+  --surface-dark-foreground: #FFFFFF;
+  --border: var(--color-line);
+  --accent: var(--color-brand);
+  --accent-hover: var(--color-brand-hover);
+  --accent-soft: var(--color-brand-soft);
+}
+
+.dark {
+  --background: #06122A;
+  --foreground: #E8EEF7;
+  --muted: #93A3BE;
+  --surface: #0E1F3D;
+  --surface-alt: #14274A;
+  --surface-dark: #0A1730;
+  --surface-dark-foreground: #E8EEF7;
+  --border: #1E3463;
+  --accent: #5687FF;
+  --accent-hover: #7BA1FF;
+  --accent-soft: #1A2D5B;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-foreground: var(--surface-dark-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes drift {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(20px); }
+}
+
+.float-slow { animation: float 6s ease-in-out infinite; }
+.float-med  { animation: float 4s ease-in-out infinite; }
