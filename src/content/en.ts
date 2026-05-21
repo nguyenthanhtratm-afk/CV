@@ -17,7 +17,7 @@ export const en: Content = {
   },
   hero: {
     eyebrow: "Open to opportunities",
-    name: "Nguyen Thi Thanh Tra",
+    name: "Nguyen Thanh Tra",
     title: "Digital Marketing Specialist",
     location: "Go Vap · Ho Chi Minh City",
     intro:

@@ -17,7 +17,7 @@ export const vi: Content = {
   },
   hero: {
     eyebrow: "Open to opportunities",
-    name: "Nguyễn Thị Thanh Trà",
+    name: "Nguyễn Thanh Trà",
     title: "Digital Marketing Specialist",
     location: "Gò Vấp · TP. Hồ Chí Minh",
     intro:

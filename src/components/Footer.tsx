@@ -31,7 +31,7 @@ export function Footer() {
               <span className="inline-flex w-9 h-9 rounded-full bg-accent items-center justify-center">
                 <Sparkles className="w-4 h-4" />
               </span>
-              Nguyễn Thị Thanh Trà
+              Nguyễn Thanh Trà
             </div>
             <p className="mt-4 text-white/70 max-w-sm">{t.footer.tagline}</p>
             <div className="mt-6 flex items-center gap-3">
